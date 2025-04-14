@@ -36,7 +36,7 @@ function getPreviouslyPic() {
 function getNextPic() {
     currentIndexSlide = (currentIndexSlide + 1) % pics.length;
     showPic(currentIndexSlide)
-    console.log(currentIndexSlide)
+   // console.log(currentIndexSlide)
     if ( arrowLeft.classList.contains('none') )
         arrowLeft.classList.remove('none');
 }
@@ -50,7 +50,7 @@ function beginAutomaticSlider() {
     // 3 % 3 give rest  0 (cycle give back to first pic) so make sure of slider loop
 
     setTimeout(beginAutomaticSlider, 3000);
-    console.log(currentIndexSlide)
+   // console.log(currentIndexSlide)
     if ( arrowLeft.classList.contains('none') )
         arrowLeft.classList.remove('none');
 }
